@@ -1,0 +1,44 @@
+body {
+    background-color: black;
+    color: white; 
+    font-family: Arial, sans-serif; 
+    margin: 0; 
+    padding: 0; 
+    height: 200vh;
+}
+
+.header {
+    padding: 20px;
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    background-color: black; 
+    z-index: 1000; 
+    border-bottom: 3px solid #333; 
+}
+
+.metobaba {
+    height: 50px; 
+}
+
+.button-container {
+    display: flex; 
+    align-items: center; 
+}
+
+.button {
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-left: 10px; 
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}

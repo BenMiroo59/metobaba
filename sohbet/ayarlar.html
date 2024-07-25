@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayarlar</title>
+    <link rel="stylesheet" href="ayarlar.css">
+    <link rel="icon" href="icon.ico" type="ico">
+</head>
+<body>
+    <div class="settings-container">
+        <h2>Ayarlar</h2>
+        <div class="settings-section">
+            <label for="username-input">Kullanıcı Adı:</label>
+            <input type="text" id="username-input" placeholder="Yeni Kullanıcı Adı" />
+        </div>
+        <div class="settings-section">
+            <label for="profile-pic-input">Profil Fotoğrafı:</label>
+            <input type="file" id="profile-pic-input" accept="image/*" />
+            <img id="profile-pic-preview" src="" alt="Profil Resmi" />
+        </div>
+        <button onclick="saveSettings()">Kaydet</button>
+        <button onclick="goBack()">Geri Dön</button>
+    </div>
+    <script src="ayarlar.js"></script>
+</body>
+</html>

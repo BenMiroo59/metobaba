@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sohbet</title>
+    <link rel="stylesheet" href="sohbet.css">
+    <link rel="icon" href="icon.ico" type="ico">
+</head>
+<body>
+    <div class="container">
+        <div class="chat-container" id="chat-container">
+            <div class="chat-header">
+                <button onclick="toggleArchive()">Sohbet Arşiv</button>
+                <button onclick="openSettings()">Ayarlar</button>
+            </div>
+            <div class="chat-messages" id="chat-messages"></div>
+            <div class="chat-input-container">
+                <input type="text" id="chat-input" placeholder="Mesajınızı yazın..." />
+                <button onclick="sendMessage()">Gönder</button>
+            </div>
+        </div>
+        <div class="chat-archive" id="chat-archive">
+            <div id="archive-header">
+                Sohbet Arşivi
+                <button id="close-archive" onclick="toggleArchive()">X</button>
+            </div>
+            <div id="archive-content">
+                <textarea id="archive-textarea" readonly></textarea>
+                <div id="archive-files"></div> <!-- Günlük dosyalarını listeleyecek alan -->
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
